@@ -1,0 +1,102 @@
+body{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(74, 73, 73);  */
+    background-color:rgb(1, 79, 82);
+}
+.upper{
+    width: 40%;
+    margin-top: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.1px 0.1px 8px black;
+    background-color:rgb(1, 161, 166);
+}
+.upper .upper-part{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.upper .upper-part input{
+    width:225px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 7px;
+}
+.upper .upper-part button{
+    margin-left: 5px;
+    width: 60px;
+    height: 25px;
+    background-color: rgb(200, 66, 66);
+    opacity: 0.6;
+    border-radius: 7px;
+    pointer-events: none;
+}
+.upper .upper-part button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.upper .upper-part button:hover{
+    background-color: rgb(254, 87, 87);
+}
+.lower{
+    width:40%;
+    background-color:rgb(1, 161, 166);
+    margin-top: 10px;
+    box-shadow: 0.1px 0.1px 8px black;
+    border-radius: 7px;
+}
+.lower h4{
+    padding-inline-start: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.lower h4 button{
+    margin-right: 5px;
+    background-color: rgb(200, 66, 66);
+    opacity: 0.6;
+    pointer-events: none;
+    border-radius: 7px;
+}
+.lower h4 button:hover{
+    background-color: rgb(254, 87, 87);
+}
+.lower h4 button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lower ul::-webkit-scrollbar {
+    display: none;
+  }
+.lower ul{
+    padding-inline-start: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+.line-through{
+    text-decoration: line-through;
+    color:rgb(103, 83, 83);
+  }
+.lower li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.lower li button{
+    margin-right: 5px;
+    background-color: rgb(200, 66, 66);
+    border-radius: 6px;
+}
+.lower li button:hover{
+    background-color: rgb(254, 87, 87);
+}
